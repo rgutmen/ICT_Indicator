@@ -47,6 +47,7 @@ namespace ICT
             set
             {
                 _inColorBuy = value;
+                RecalculateValues();
             }
         }
 
@@ -57,6 +58,7 @@ namespace ICT
             set
             {
                 _borColorBuy = value;
+                RecalculateValues();
             }
         }
 
@@ -78,6 +80,7 @@ namespace ICT
             set
             {
                 _inColorSell = value;
+                RecalculateValues();
             }
         }
 
@@ -88,6 +91,7 @@ namespace ICT
             set
             {
                 _borColorSell = value;
+                RecalculateValues();
             }
         }
 
@@ -192,6 +196,7 @@ namespace ICT
        
 
         #endregion
+
         #region private vars
 
         private Color _inColorBuy = Color.LightGreen;
