@@ -11,7 +11,7 @@ Atas:
 
     https://atas.net
 
-Knoledge about ICT (check for Metorship, in his playlist):
+Knowledge about ICT (check for Metorship, in his playlist):
     
     https://www.youtube.com/@InnerCircleTrader
 ## How to install?
