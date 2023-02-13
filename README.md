@@ -43,7 +43,7 @@ Knowledge about ICT (check for Metorship, in his playlist):
 * Also is possible to modify the colors of both sets of rectangles:
     * Rectangle filled color.
     * Rectangle border color.
-    * Rectangle border width.There are three different blocksColour parameters
+    * Rectangle border width.
 ---
 **NOTE**
 
