@@ -137,10 +137,10 @@ namespace ICT
 
             else
             {
-
-                var currentCandle = GetCandle(bar);
-                var prevCandle = GetCandle(bar - 1);
-                var prevX2Candle = GetCandle(bar - 2);
+                //this.LogInfo($"bar number: {bar}");
+                var currentCandle = GetCandle(bar - 1);
+                var prevCandle = GetCandle(bar - 2);
+                var prevX2Candle = GetCandle(bar - 3);
                 
                 
                 // If downtrend... (Three consecutive candles)                
@@ -155,8 +155,8 @@ namespace ICT
                         {
                             Width = _borderWidthSell
                         };
-                        _rectangle = new DrawingRectangle(bar - 2, prevX2Candle.Low,
-                                                          bar, currentCandle.High,
+                        _rectangle = new DrawingRectangle(bar - 3, prevX2Candle.Low,
+                                                          bar - 1, currentCandle.High,
                                                           pen, brush);
                         Rectangles.Add(_rectangle);
                     }  
@@ -173,8 +173,8 @@ namespace ICT
                         {
                             Width = _borderWidthBuy
                         };
-                        _rectangle = new DrawingRectangle(bar - 2, prevX2Candle.High,
-                                                          bar, currentCandle.Low,
+                        _rectangle = new DrawingRectangle(bar - 3, prevX2Candle.High,
+                                                          bar - 1, currentCandle.Low,
                                                           pen, brush);
                         Rectangles.Add(_rectangle);
                     }
