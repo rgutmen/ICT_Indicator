@@ -37,7 +37,9 @@ Knowledge about ICT (check for Metorship, in his playlist):
 </div>
 
 * Height: That represent the lenght, in points, (could be a decimal number) of the body from the middle candle in absolute value, this is Close-Open for bullish candle and Open-Close for bearish candles.
-
+    
+    * **Height equals to 0:** All the rectangles will be drawn, regardless of the length of candle's body.
+    * **Height different to 0:** The rectangles will be drawn, when the candle's body is bigger than the "Height" parameter that has been seted up.
 * Also is possible to modify the colors of both sets of rectangles:
     * Rectangle filled color.
     * Rectangle border color.
